@@ -2620,17 +2620,12 @@ main.isHeaderFixed > *:first-child {
 }
 
 .product-content__sidebar {
-  width: 22%;
   position: sticky;
   overflow: scroll;
 }
 
 .product-sidebar__services {
   margin-top: auto;
-}
-
-.product-content__content {
-  width: 78%;
 }
 
 .product-sidebar__service-list li {
