@@ -1196,6 +1196,58 @@ main.isHeaderFixed > *:first-child {
   color: var(--recommend-link-color);
 }
 
+.sidebar-filter {
+  padding: 20px 0;
+}
+.sidebar-filter .form-check {
+  margin-bottom: 10px;
+}
+.sidebar-filter .form-check-label {
+  font-weight: 500;
+  line-height: 1.2;
+  cursor: pointer;
+  user-select: none;
+}
+.sidebar-filter .form-check-input {
+  position: relative;
+  top: -4px;
+  cursor: pointer;
+}
+.sidebar-filter .form-control {
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: 4px;
+  min-height: 10px;
+  padding: 5px 10px;
+}
+.sidebar-filter .form-check-input,
+.sidebar-filter .form-control {
+  box-shadow: 0 0 0 0;
+}
+
+.sidebar-filter__group {
+  margin-top: 20px;
+  font-weight: 600;
+}
+.sidebar-filter__group .sidebar-filter__group-title {
+  margin-bottom: 0;
+}
+.sidebar-filter__group .form-check-label {
+  font-weight: 300;
+}
+.sidebar-filter__group .form-check {
+  margin-bottom: 0;
+}
+.sidebar-filter__group .sidebar-filter__flex {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.sidebar-filter__btn {
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
 .header {
   width: 100%;
   transition: background-color var(--bs-transition);
@@ -2564,14 +2616,44 @@ main.isHeaderFixed > *:first-child {
 .product-content__wrap {
   display: flex;
   flex-wrap: nowrap;
+  gap: 40px;
 }
 
 .product-content__sidebar {
-  width: 20%;
+  width: 22%;
+  position: sticky;
+  overflow: scroll;
+}
+
+.product-sidebar__services {
+  margin-top: auto;
 }
 
 .product-content__content {
-  width: 80%;
+  width: 78%;
+}
+
+.product-sidebar__service-list li {
+  line-height: 1.4;
+}
+.product-sidebar__service-list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.product-sidebar__service-list a {
+  text-decoration: none;
+  color: #000;
+}
+.product-sidebar__service-list a:hover {
+  color: var(--primary-color-hover);
+}
+
+.product-sidebar__service-more {
+  font-weight: 600;
+  text-decoration: none;
+}
+.product-sidebar__service-more:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
 }
 
 .product-content__cards-list {
